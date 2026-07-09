@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>友链 | 嵌入式技术博客</title><meta name="author" content="peko"><meta name="copyright" content="peko"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="🔗 友链交换欢迎嵌入式、电子、物联网等方向的博主交换友链！ 交换要求 技术方向相关（嵌入式&#x2F;电子&#x2F;IoT&#x2F;电源&#x2F;DIY） 内容原创，定期更新 先在贵站添加本站链接，然后在此页面留言  本站信息1234名称：嵌入式技术博客链接：https:&#x2F;&#x2F;my-tech-blog.vercel.app头像：https:&#x2F;&#x2F;my-tech-blog.vercel.app&#x2F;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="友链">
+<meta property="og:url" content="https://peko1105.github.io/my-tech-blog/link/">
+<meta property="og:site_name" content="嵌入式技术博客">
+<meta property="og:description" content="🔗 友链交换欢迎嵌入式、电子、物联网等方向的博主交换友链！ 交换要求 技术方向相关（嵌入式&#x2F;电子&#x2F;IoT&#x2F;电源&#x2F;DIY） 内容原创，定期更新 先在贵站添加本站链接，然后在此页面留言  本站信息1234名称：嵌入式技术博客链接：https:&#x2F;&#x2F;my-tech-blog.vercel.app头像：https:&#x2F;&#x2F;my-tech-blog.vercel.app&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://peko1105.github.io/my-tech-blog/img/touxiang.webp">
+<meta property="article:published_time" content="2025-07-09T04:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-09T08:43:44.748Z">
+<meta property="article:author" content="peko">
+<meta property="article:tag" content="嵌入式,STM32,单片机,物联网,电源设计,实战教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://peko1105.github.io/my-tech-blog/img/touxiang.webp"><script type="application/ld+json"></script><link rel="shortcut icon" href="/my-tech-blog/img/favicon.png"><link rel="canonical" href="https://peko1105.github.io/my-tech-blog/link/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/my-tech-blog/css/index.css?v=5.5.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/my-tech-blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '友链',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/my-tech-blog/atom.xml" title="嵌入式技术博客" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/my-tech-blog/img/loading.svg" data-lazy-src="/my-tech-blog/img/touxiang.webp" onerror="this.onerror=null;this.src='/my-tech-blog/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/my-tech-blog/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/my-tech-blog/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/my-tech-blog/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/my-tech-blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/search/"><i class="fa-fw fas fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page type-link" id="body-wrap"><header class="not-home-page fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/my-tech-blog/"><span class="site-name">嵌入式技术博客</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/my-tech-blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/search/"><i class="fa-fw fas fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/my-tech-blog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">友链</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><div class="flink"><h2 id="🔗-友链交换"><a href="#🔗-友链交换" class="headerlink" title="🔗 友链交换"></a>🔗 友链交换</h2><p>欢迎嵌入式、电子、物联网等方向的博主交换友链！</p>
+<h3 id="交换要求"><a href="#交换要求" class="headerlink" title="交换要求"></a>交换要求</h3><ul>
+<li>技术方向相关（嵌入式&#x2F;电子&#x2F;IoT&#x2F;电源&#x2F;DIY）</li>
+<li>内容原创，定期更新</li>
+<li>先在贵站添加本站链接，然后在此页面留言</li>
+</ul>
+<h3 id="本站信息"><a href="#本站信息" class="headerlink" title="本站信息"></a>本站信息</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">名称：嵌入式技术博客</span><br><span class="line">链接：https://my-tech-blog.vercel.app</span><br><span class="line">头像：https://my-tech-blog.vercel.app/img/touxiang.webp</span><br><span class="line">简介：手把手教你玩转嵌入式 | STM32 / 物联网 / 电源设计</span><br></pre></td></tr></table></figure>
+</div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/my-tech-blog/img/loading.svg" data-lazy-src="/my-tech-blog/img/touxiang.webp" onerror="this.onerror=null;this.src='/my-tech-blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">peko</div><div class="author-info-description">嵌入式技术博客 | STM32 | 物联网 | 电源设计 | 单片机实战教程</div><div class="site-data"><a href="/my-tech-blog/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/my-tech-blog/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/my-tech-blog/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="mailto:peko1105@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://github.com/peko" target="_blank" title="GitHub"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/" target="_blank" title="哔哩哔哩"><i class="fab fa-bilibili"></i></a><a class="social-icon" href="https://www.xiaohongshu.com/" target="_blank" title="小红书"><i class="fas fa-book"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="card-widget"><div class="item-headline"><i></i><span></span></div><div class="item-content"></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/my-tech-blog/guide/" title="博客使用指南"><img src="/my-tech-blog/img/loading.svg" data-lazy-src="/my-tech-blog/img/default-bg.webp" onerror="this.onerror=null;this.src='/my-tech-blog/img/404.jpg'" alt="博客使用指南"/></a><div class="content"><a class="title" href="/my-tech-blog/guide/" title="博客使用指南">博客使用指南</a><time datetime="2025-07-09T04:00:00.000Z" title="发表于 2025-07-09 12:00:00">2025-07-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/my-tech-blog/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">思考与记录</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/my-tech-blog/tags/%E8%B5%84%E6%96%99%E8%8E%B7%E5%8F%96/" style="font-size: 1.1em; color: #999">资料获取</a> <a href="/my-tech-blog/tags/%E5%85%AC%E5%91%8A/" style="font-size: 1.1em; color: #999">公告</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/my-tech-blog/archives/2025/07/">
+            <span class="card-archive-list-date">
+              七月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">363</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-07-09T08:43:58.943Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By peko</span></div><div class="footer_custom_text">做任何事情之前先想清楚事情的价值，动脑袋思考是一件累人的事情，但是带来给你的收益会让你少更多的烦恼。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">简体中文</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/my-tech-blog/js/utils.js?v=5.5.5"></script><script src="/my-tech-blog/js/main.js?v=5.5.5"></script><script src="/my-tech-blog/js/tw_cn.js?v=5.5.5"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': '',
+      'data-repo-id': '',
+      'data-category-id': '',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !true) {
+    if (true) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script>
+  (function() {
+    // 仅在首页插入分类卡片
+    if (document.body.classList.contains('home')) {
+      var css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = '/css/custom.css';
+      document.head.appendChild(css);
+
+      var portal = `<div class="home-category-portal">
+        <div class="portal-header">
+          <h2 class="portal-title">📂 资料分类</h2>
+          <p class="portal-subtitle">点击卡片，按方向查找教程</p>
+        </div>
+        <div class="category-cards">
+          <a class="category-card notice" href="/categories/思考与记录/" title="博客指南">
+            <div class="card-bg notice-bg"><i class="fas fa-bullhorn"></i></div>
+            <div class="card-info"><h3>📢 博客指南</h3><p>置顶 · 如何使用本站与获取资源</p></div>
+          </a>
+          <a class="category-card" href="/categories/嵌入式/" title="嵌入式教程">
+            <div class="card-bg embedded"><i class="fas fa-microchip"></i></div>
+            <div class="card-info"><h3>嵌入式</h3><p>STM32 / 物联网 / 单片机项目</p></div>
+          </a>
+          <a class="category-card" href="/categories/电源设计/" title="电源设计教程">
+            <div class="card-bg power"><i class="fas fa-bolt"></i></div>
+            <div class="card-info"><h3>电源</h3><p>BUCK / BOOST / 逆变 / 采样</p></div>
+          </a>
+          <a class="category-card" href="/categories/工具与软件/" title="工具与软件">
+            <div class="card-bg module"><i class="fas fa-cube"></i></div>
+            <div class="card-info"><h3>工具与软件</h3><p>CubeIDE / Arduino / MATLAB</p></div>
+          </a>
+          <a class="category-card" href="/categories/思考与记录/" title="思考与记录">
+            <div class="card-bg thinking"><i class="fas fa-lightbulb"></i></div>
+            <div class="card-info"><h3>思考与记录</h3><p>学习笔记 / 资源分享 / 杂谈</p></div>
+          </a>
+        </div>
+      </div>`;
+
+      // 在文章列表前插入分类卡片
+      var contentInner = document.getElementById('content-inner');
+      if (contentInner) {
+        var temp = document.createElement('div');
+        temp.innerHTML = portal;
+        contentInner.insertBefore(temp.firstElementChild, contentInner.firstChild);
+      }
+    }
+  })();
+</script>
+<script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
