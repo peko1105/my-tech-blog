@@ -11,8 +11,8 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
-## 部署到 Vercel 后改为你的实际 URL
-url: https://my-tech-blog.vercel.app
+## GitHub Pages URL
+url: https://peko1105.github.io/my-tech-blog
 permalink: :abbrlink/
 permalink_defaults:
 pretty_urls:
@@ -87,10 +87,11 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
-# Deployment
-## 先留空，后续配置 GitHub Pages / Vercel 自动部署
+# Deployment - GitHub Pages (via GitHub Actions)
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:peko1105/my-tech-blog.git
+  branch: gh-pages
 
 # ============ 插件配置 ============
 
