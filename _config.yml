@@ -2,10 +2,10 @@
 ## Docs: https://hexo.io/docs/configuration.html
 
 # Site
-title: 嵌入式技术博客
-subtitle: '手把手教你玩转嵌入式'
-description: '嵌入式技术博客 | STM32 | 物联网 | 电源设计 | 单片机实战教程'
-keywords: 嵌入式,STM32,单片机,物联网,电源设计,实战教程
+title: 苦瓜大王成长日志
+subtitle: '嵌入式入门学习 | 个人成长记录'
+description: '嵌入式入门学习 | STM32 | 个人成长记录'
+keywords: 嵌入式,STM32,单片机,入门学习,个人成长
 author: peko
 language: zh-CN
 timezone: Asia/Shanghai

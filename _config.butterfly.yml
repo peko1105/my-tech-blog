@@ -31,7 +31,7 @@ subtitle:
   sub:
     - 不积跬步，无以至千里；不积小流，无以成江海
     - 嵌入式学习，从实战开始 💪
-    - 手把手教你做项目 🛠️
+    
 
 # 首页文章列表
 index_post_list:
@@ -90,7 +90,7 @@ card_announcement:
 # 作者信息卡片
 card_author:
   enable: true
-  description: 嵌入式软件工程师 | 开源爱好者<br>不积跬步无以至千里💪不积小流无以成江海
+  description: 嵌入式入门学习 | STM32 | 个人成长记录<br>不积跬步无以至千里💪不积小流无以成江海
   button:
     enable: true
     icon: fas fa-envelope
