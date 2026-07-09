@@ -9,6 +9,15 @@ top:
         <p class="portal-subtitle">点击卡片，按方向查找教程</p>
       </div>
       <div class="category-cards">
+        <a class="category-card notice" href="/guide/" title="网站维护教程">
+          <div class="card-bg notice-bg">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="card-info">
+            <h3>📖 使用指南</h3>
+            <p>置顶 · 如何写文章和维护网站</p>
+          </div>
+        </a>
         <a class="category-card" href="/categories/嵌入式/" title="嵌入式教程">
           <div class="card-bg embedded">
             <i class="fas fa-microchip"></i>
