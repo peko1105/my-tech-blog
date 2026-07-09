@@ -1,0 +1,58 @@
+# Butterfly inject: 首页分类卡片入口
+# 在首页文章列表顶部插入分类导航卡片
+
+top:
+  - |
+    <div class="home-category-portal">
+      <div class="portal-header">
+        <h2 class="portal-title">📂 资料分类</h2>
+        <p class="portal-subtitle">点击卡片，按方向查找教程</p>
+      </div>
+      <div class="category-cards">
+        <a class="category-card notice" href="/2025/07/09/hello-world/" title="博客使用指南">
+          <div class="card-bg notice-bg">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <div class="card-info">
+            <h3>📢 博客指南</h3>
+            <p>置顶 · 如何使用本站与获取资源</p>
+          </div>
+        </a>
+        <a class="category-card" href="/categories/嵌入式/" title="嵌入式教程">
+          <div class="card-bg embedded">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="card-info">
+            <h3>嵌入式</h3>
+            <p>STM32 / 物联网 / 单片机项目</p>
+          </div>
+        </a>
+        <a class="category-card" href="/categories/电源设计/" title="电源设计教程">
+          <div class="card-bg power">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="card-info">
+            <h3>电源</h3>
+            <p>BUCK / BOOST / 逆变 / 采样</p>
+          </div>
+        </a>
+        <a class="category-card" href="/categories/工具与软件/" title="工具与软件">
+          <div class="card-bg module">
+            <i class="fas fa-cube"></i>
+          </div>
+          <div class="card-info">
+            <h3>工具与软件</h3>
+            <p>CubeIDE / Arduino / MATLAB</p>
+          </div>
+        </a>
+        <a class="category-card" href="/categories/思考与记录/" title="思考与记录">
+          <div class="card-bg thinking">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="card-info">
+            <h3>思考与记录</h3>
+            <p>学习笔记 / 资源分享 / 杂谈</p>
+          </div>
+        </a>
+      </div>
+    </div>

@@ -1,0 +1,306 @@
+# ===============================================
+# Butterfly 主题配置
+# Docs: https://butterfly.js.org/
+# ===============================================
+
+# ---------- 导航菜单 ----------
+nav:
+  logo: # 可放 logo 图片路径
+  display_title: true
+  fixed: true
+
+menu:
+  首页: / || fas fa-home
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  归档: /archives/ || fas fa-archive
+  搜索: /search/ || fas fa-search
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
+
+# ---------- 首页设置 ----------
+# 首页大图
+index_img: # 留空使用默认
+
+# 首页副标题（打字机效果）
+subtitle:
+  enable: true
+  effect: true
+  loop: true
+  source: false
+  sub:
+    - 不积跬步，无以至千里；不积小流，无以成江海
+    - 嵌入式学习，从实战开始 💪
+    - 手把手教你做项目 🛠️
+
+# 首页文章列表
+index_post_list:
+  direction: column
+  column: 1
+  content_radius: 12
+
+# ---------- 代码高亮 ----------
+highlight_theme: mac
+highlight_copy: true
+highlight_lang: true
+highlight_height_limit: 400
+highlight_shrink: false
+
+# ---------- 图片设置 ----------
+# 网站背景
+background: # 可设置背景图
+
+# 文章默认缩略图
+default_top_img: # 留空，每篇文章单独设置
+
+# ---------- 社交图标 ----------
+social:
+  fas fa-envelope: mailto:peko1105@163.com || 邮箱
+  fab fa-github: https://github.com/peko || GitHub
+  fab fa-bilibili: https://space.bilibili.com/ || 哔哩哔哩
+  fas fa-book: https://www.xiaohongshu.com/ || 小红书
+
+# ---------- 头像与个人信息 ----------
+avatar:
+  img: /img/touxiang.webp
+  effect: true
+
+# 侧边栏个人信息
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+
+# 卡片公告
+card_announcement:
+  enable: true
+  content: |
+    ✨･ﾟ･*:.｡. .｡.:*･ﾟ･*<br>
+    所有文章均在B站同步视频分享<br>
+    有疑惑可在B站下方评论区发表~<br>
+    资料自取，转载请标明来处<br>
+    *:･ﾟ✧*:･ﾟ✧
+
+# 作者信息卡片
+card_author:
+  enable: true
+  description: 嵌入式软件工程师 | 开源爱好者<br>不积跬步无以至千里💪不积小流无以成江海
+  button:
+    enable: true
+    icon: fas fa-envelope
+    text: 邮件联系
+    link: mailto:peko1105@163.com
+
+# ---------- 评论系统（Giscus） ----------
+# 使用 GitHub Discussions，完全免费，无需自建后端
+comments:
+  use: Giscus
+  text: true
+  lazyload: true
+  count: true
+
+giscus:
+  repo: # 填写你的 GitHub 仓库，格式: 用户名/仓库名
+  repo_id: # 从 https://giscus.app 获取
+  category_id: # 从 https://giscus.app 获取
+  category_name: # 从 https://giscus.app 获取
+  theme:
+    light: light
+    dark: dark
+  option:
+
+# ---------- 搜索 ----------
+local_search:
+  enable: true
+  preload: true
+  CDN:
+  top_n_per_article: 1
+  unescape: true
+
+# ---------- 深色模式 ----------
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+  startDark: false
+
+# ---------- 简繁转换 ----------
+translate:
+  enable: true
+  default: 简体中文
+  defaultEncoding: 2
+  translateDelay: 0
+  msgToTraditionalChinese: '繁'
+  msgToSimplifiedChinese: '簡'
+
+# ---------- 访客统计（不蒜子） ----------
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# ---------- 图片懒加载 ----------
+lazyload:
+  enable: true
+  field: site
+  placeholder: /img/loading.svg
+  blur: true
+
+# ---------- 字数统计 ----------
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# ---------- 版权声明 ----------
+copyright:
+  enable: true
+  limit_count: 50
+  license: CC BY-NC-SA 4.0
+  licences_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# ---------- 文章相关 ----------
+# 文章元数据
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+# 文章打赏
+reward:
+  enable: false
+
+# 相关文章
+related_post:
+  enable: true
+  limit: 6
+  date_type: created
+
+# 文章过期提醒
+noticeOutdate:
+  enable: true
+  style: flat
+  limit_day: 365
+  position: top
+  message_prev: 本文最后更新于
+  message_next: 天前，内容可能已过时，请谨慎参考。
+
+# ---------- 页脚 ----------
+footer:
+  owner:
+    enable: true
+    since: 2025
+  copyright: true
+  custom_text: 做任何事情之前先想清楚事情的价值，动脑袋思考是一件累人的事情，但是带来给你的收益会让你少更多的烦恼。
+  runtime:
+    enable: true
+    launch_time: 2025-07-09
+
+# ---------- 右侧工具栏 ----------
+rightside_scroll_percent: true
+rightside_item_order:
+  enable: false
+  hide: 'readmode,translate,darkmode,hide_aside'
+  show: 'toc,chat,comment'
+
+# ---------- 其他 ----------
+# 标签云
+tag_cloud:
+  enable: true
+  min: 16
+  max: 32
+  start: '#999'
+  end: '#49b1f5'
+
+# 404 页面
+error_404:
+  enable: true
+  subtitle: '页面未找到'
+
+# PWA
+pwa:
+  enable: false
+
+# 分享按钮
+sharejs:
+  enable: false
+
+# 运行时间
+runtimeshow:
+  enable: true
+  publish_date: 2025/7/9 00:00:00
+
+# 中图馆
+medium_zoom: true
+
+# Snackbar 提示
+snackbar:
+  enable: true
+  position: top-right
+  bg_light: '#49b1f5'
+  bg_dark: '#1f1f1f'
+
+# ---------- Inject（自定义注入） ----------
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
+  bottom:
+    - |
+      <script>
+        (function() {
+          // 仅在首页插入分类卡片
+          if (document.body.classList.contains('home')) {
+            var css = document.createElement('link');
+            css.rel = 'stylesheet';
+            css.href = '/css/custom.css';
+            document.head.appendChild(css);
+
+            var portal = `<div class="home-category-portal">
+              <div class="portal-header">
+                <h2 class="portal-title">📂 资料分类</h2>
+                <p class="portal-subtitle">点击卡片，按方向查找教程</p>
+              </div>
+              <div class="category-cards">
+                <a class="category-card notice" href="/categories/思考与记录/" title="博客指南">
+                  <div class="card-bg notice-bg"><i class="fas fa-bullhorn"></i></div>
+                  <div class="card-info"><h3>📢 博客指南</h3><p>置顶 · 如何使用本站与获取资源</p></div>
+                </a>
+                <a class="category-card" href="/categories/嵌入式/" title="嵌入式教程">
+                  <div class="card-bg embedded"><i class="fas fa-microchip"></i></div>
+                  <div class="card-info"><h3>嵌入式</h3><p>STM32 / 物联网 / 单片机项目</p></div>
+                </a>
+                <a class="category-card" href="/categories/电源设计/" title="电源设计教程">
+                  <div class="card-bg power"><i class="fas fa-bolt"></i></div>
+                  <div class="card-info"><h3>电源</h3><p>BUCK / BOOST / 逆变 / 采样</p></div>
+                </a>
+                <a class="category-card" href="/categories/工具与软件/" title="工具与软件">
+                  <div class="card-bg module"><i class="fas fa-cube"></i></div>
+                  <div class="card-info"><h3>工具与软件</h3><p>CubeIDE / Arduino / MATLAB</p></div>
+                </a>
+                <a class="category-card" href="/categories/思考与记录/" title="思考与记录">
+                  <div class="card-bg thinking"><i class="fas fa-lightbulb"></i></div>
+                  <div class="card-info"><h3>思考与记录</h3><p>学习笔记 / 资源分享 / 杂谈</p></div>
+                </a>
+              </div>
+            </div>`;
+
+            // 在文章列表前插入分类卡片
+            var contentInner = document.getElementById('content-inner');
+            if (contentInner) {
+              var temp = document.createElement('div');
+              temp.innerHTML = portal;
+              contentInner.insertBefore(temp.firstElementChild, contentInner.firstChild);
+            }
+          }
+        })();
+      </script>

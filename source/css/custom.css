@@ -1,0 +1,128 @@
+/* ==========================================
+   首页分类卡片样式（仿 edadong.com）
+   ========================================== */
+
+.home-category-portal {
+  margin-bottom: 2rem;
+}
+
+.home-category-portal .portal-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.home-category-portal .portal-header .portal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--font-color);
+  margin-bottom: 0.5rem;
+}
+
+.home-category-portal .portal-header .portal-subtitle {
+  font-size: 0.95rem;
+  color: var(--font-color);
+  opacity: 0.7;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-card.notice {
+  border: 2px dashed #f39c12;
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+}
+
+[data-theme="dark"] .category-card.notice {
+  background: linear-gradient(135deg, #2d2410 0%, #3d2e0a 100%);
+  border-color: #f39c12;
+}
+
+.category-card .card-bg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.category-card .card-bg.notice-bg {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.category-card .card-bg.embedded {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.category-card .card-bg.power {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.category-card .card-bg.module {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.category-card .card-bg.thinking {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.category-card .card-info {
+  text-align: center;
+}
+
+.category-card .card-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--font-color);
+}
+
+.category-card .card-info p {
+  font-size: 0.8rem;
+  color: var(--font-color);
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+  .category-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .category-cards {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
