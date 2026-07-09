@@ -9,15 +9,6 @@ top:
         <p class="portal-subtitle">点击卡片，按方向查找教程</p>
       </div>
       <div class="category-cards">
-        <a class="category-card notice" href="/2025/07/09/hello-world/" title="博客使用指南">
-          <div class="card-bg notice-bg">
-            <i class="fas fa-bullhorn"></i>
-          </div>
-          <div class="card-info">
-            <h3>📢 博客指南</h3>
-            <p>置顶 · 如何使用本站与获取资源</p>
-          </div>
-        </a>
         <a class="category-card" href="/categories/嵌入式/" title="嵌入式教程">
           <div class="card-bg embedded">
             <i class="fas fa-microchip"></i>
