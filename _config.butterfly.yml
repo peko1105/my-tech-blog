@@ -250,6 +250,11 @@ snackbar:
   bg_light: '#49b1f5'
   bg_dark: '#1f1f1f'
 
+# ---------- 数学公式 ----------
+math:
+  use: mathjax
+  per_page: true
+
 # ---------- Inject（自定义注入） ----------
 inject:
   head:
